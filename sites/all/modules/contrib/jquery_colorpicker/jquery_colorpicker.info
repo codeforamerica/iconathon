@@ -1,0 +1,13 @@
+; $Id: jquery_colorpicker.info,v 1.2 2011/01/24 02:39:14 hakulicious Exp $
+name = Jquery Colorpicker
+description = Creates Form API jquery colorpicker element
+core = 7.x
+
+files[] = jquery_colorpicker.install
+files[] = jquery_colorpicker.module
+; Information added by drupal.org packaging script on January 1, 1970 - 00:00
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "jquery_colorpicker"
+datestamp = "1295922101"
+
