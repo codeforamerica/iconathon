@@ -6,7 +6,7 @@
 /**
  * HTML preprocessing
  */
-function civics_preprocess_html(&$vars) {
+function iconx_preprocess_html(&$vars) {
   global $theme_key, $user;
 
   // Add to array of helpful body classes
@@ -25,17 +25,17 @@ function civics_preprocess_html(&$vars) {
 /**
  * Maintenance page preprocessing
  */
-function  civics_preprocess_maintenance_page(&$vars) {
+function  iconx_preprocess_maintenance_page(&$vars) {
   if (class_exists('Database', FALSE)) {
-    civics_preprocess_html($vars);  // set html vars (html.tpl.php is in maintenance-page.tpl.php)
-    civics_preprocess_page($vars);  // set page vars
+    iconx_preprocess_html($vars);  // set html vars (html.tpl.php is in maintenance-page.tpl.php)
+    iconx_preprocess_page($vars);  // set page vars
   }
 }
 
 /**
  * Page preprocessing
  */
-function civics_preprocess_page(&$vars) {
+function iconx_preprocess_page(&$vars) {
 
   //$fbconnect = theme_fbconnect_login_button($vars);
   //dpm($fbconnect);
@@ -49,7 +49,7 @@ function civics_preprocess_page(&$vars) {
   }
   
   $vars['logo_image_link'] = theme_get_setting('logo_image_link');
-  $vars['logo'] = '<a href="/"><img src="/' . drupal_get_path('theme', 'civics') . '/' . $vars['logo_image_link'] . '" /></a>';
+  $vars['logo'] = '<a href="/"><img src="/' . drupal_get_path('theme', 'iconx') . '/' . $vars['logo_image_link'] . '" /></a>';
  
   $vars['prealpha'] = '';
 
@@ -75,7 +75,7 @@ function civics_preprocess_page(&$vars) {
   ));
   
   // Temp for wireframing or MVP
-  $vars['submit_btn'] = url(drupal_get_path('theme', 'civics') . '/images/submit-large-overlay.gif');
+  $vars['submit_btn'] = url(drupal_get_path('theme', 'iconx') . '/images/submit-large-overlay.gif');
   
   // Hardcoded site names
   switch ($_SERVER['HTTP_HOST']) {
@@ -121,7 +121,7 @@ function civics_preprocess_page(&$vars) {
 /**
  * Region preprocessing
  */
-function civics_preprocess_region(&$vars) {
+function iconx_preprocess_region(&$vars) {
   // Set region variables
   $vars['region_style'] = $vars['fluid_width'] = '';
   $vars['region_name'] = str_replace('_', '-', $vars['region']);
@@ -132,7 +132,7 @@ function civics_preprocess_region(&$vars) {
 /**
  * Block preprocessing
  */
-function civics_preprocess_block(&$vars) {
+function iconx_preprocess_block(&$vars) {
   global $theme_info, $user;
 
   // Exit if block is outside a defined region
@@ -145,7 +145,7 @@ function civics_preprocess_block(&$vars) {
 /**
  * Node preprocessing
  */
-function civics_preprocess_node(&$vars) {
+function iconx_preprocess_node(&$vars) {
   // dpm($vars); not working, use this krumo call instead to see the node object.
 /*   var_dump(krumo($vars)); */
 
@@ -175,7 +175,7 @@ function civics_preprocess_node(&$vars) {
 /**
  * Comment preprocessing
  */
-function civics_preprocess_comment(&$vars) {
+function iconx_preprocess_comment(&$vars) {
   static $comment_odd = TRUE;
  // Comment is odd or even
 
@@ -188,6 +188,6 @@ function civics_preprocess_comment(&$vars) {
 /**
  * Preprocessing function for node types.
  */
-function civics_preprocess_node_card(&$vars) {
+function iconx_preprocess_node_card(&$vars) {
 
 }

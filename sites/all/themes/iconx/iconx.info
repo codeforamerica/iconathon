@@ -1,6 +1,6 @@
 ; Theme basics
-name = Data Wiki Theme
-description = Theme for civics.
+name = IconX Theme
+description = Theme for iconx.
 core = 7.x
 engine = phptemplate
 
@@ -55,6 +55,6 @@ features[] = slogan
 features[] = favicon
 
 ; Custom Theme Settings
-settings[sitename] = civics
-settings[site_slogan] = civics
+settings[sitename] = iconx
+settings[site_slogan] = iconx
 ; settings[logo_image_link] = images/logo.png
