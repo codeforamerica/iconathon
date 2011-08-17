@@ -9,7 +9,7 @@ body {
   background:#ddd;
   font-family:Helvetica, Arial, sans-serif;
   color:#333;
-  font-size:12px;
+  font-size:14px;
   line-height: 16px;
   padding:0;
   margin:0;
@@ -18,6 +18,10 @@ body {
 #container {
   background: #000000;
   padding: 0px 5px 0px 0px;
+}
+
+#header-bottom .block {
+  margin-bottom: 10px;
 }
 
 .header-logo-container{
@@ -42,14 +46,31 @@ p {
   width: auto;
 }
 
+.meta {
+  font-size: 90%;
+  color: #666;
+  padding: 10px 0 0 0;
+}
+
 #main ol,
 #main ul {
   padding: 5px;
   margin: 0;
-
 }
 
-#main li {
+#main ul.pager  li {
+  padding: inherit;
+  margin:  inherit;
+}
+
+#main ol li {
+  list-style:decimal;
+  list-style-position: inside;
+  padding: 0 20px 10px 0;
+  margin: 0;
+}
+
+#main ul li {
   list-style: disc;
   list-style-position: inside;
   padding: 0;
@@ -147,12 +168,13 @@ strong {
 
 #block-system-main-menu a {
   color: #ddd;
-  font-size: 125%;
+  font-size: 100%;
   text-decoration: none;
 }
 
 
 #block-system-main-menu  a:hover, #block-system-main-menu  a:active {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 5px;
 }
