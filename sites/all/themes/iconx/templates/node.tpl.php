@@ -15,7 +15,7 @@
     </div><!-- /node-top -->
     <?php endif; ?>
 
-    <div class="content grid_12 alpha grid_16"<?php print $content_attributes; ?>>
+    <div class="content"<?php print $content_attributes; ?>>
 
         <?php hide($content['field_image']); ?>
 

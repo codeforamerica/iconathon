@@ -151,7 +151,7 @@ function iconx_preprocess_node(&$vars) {
 
   // Add to array of handy node classes
   $vars['classes_array'][] = $vars['zebra'];                              // Node is odd or even
-  $vars['classes_array'][] = (!$vars['teaser']) ? 'full-node grid_16 alpha' : '';       // Node is teaser or full-node
+  $vars['classes_array'][] = (!$vars['teaser']) ? 'full-node' : '';       // Node is teaser or full-node
   
   // Add preprocess functions for all node types.
   $function = __FUNCTION__ . '_' . $vars['node']->type;

@@ -3,14 +3,66 @@
 
 /* Base Settings
 -------------------------------------------------------------- */
+
+
 body {
-  background:#fff;
+  background:#ddd;
   font-family:Helvetica, Arial, sans-serif;
   color:#333;
   font-size:12px;
   line-height: 16px;
   padding:0;
   margin:0;
+}
+
+#container {
+  background: #000000;
+  padding: 0px 5px 0px 0px;
+}
+
+.header-logo-container{
+  padding-left: 8px;
+}
+
+#slogan {
+  padding: 10px;
+}
+
+#main {
+  background: #ffffff;
+  padding: 0px 5px 0px 10px;
+}
+
+.title-container,
+#content-container {
+  padding: 0px 5px 0px 10px;
+}
+
+p {
+  width: auto;
+}
+
+#main ol,
+#main ul {
+  padding: 5px;
+  margin: 0;
+
+}
+
+#main li {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+#content .views-row {
+  margin-bottom: 40px;
+}
+
+#content h2 {
+  width: 80%;
+  margin-bottom: 0;
 }
 
 .form-text {
@@ -20,9 +72,9 @@ body {
 
 /* HTML Elements
 -------------------------------------------------------------- */
-h1 { font-size:24px; line-height:150%; margin-bottom:15px;}
-h2 { font-size:18px; line-height:150%; margin-bottom:15px;}
-h3, h4, h5, dt { font-size:16px; line-height:150%; margin-bottom:15px;}
+h1 { font-size:24px; line-height:150%; margin-top:0px; margin-bottom:15px;}
+h2 { font-size:18px; line-height:150%; margin-top:0px; margin-bottom:15px;}
+h3, h4, h5, dt { font-size:16px; line-height:150%; margin-top:15px; margin-bottom:10px;}
 
 
 dl,
@@ -32,13 +84,18 @@ dt {
   display: block;
 }
 
+#main a {
+    font-weight: bold;
+}
+
 a:link, a:visited {
-    color:#96a044;
+    color: #0A8093;
     text-decoration:none;
+
 }
 
 a:hover, a:active {
-    color:#96a044;
+    color: #0A8093;
     text-decoration:underline;
 }
 
@@ -52,11 +109,50 @@ strong {
     font-weight: bold;
 }
 
+#sidebar-second .block ul,
+#sidebar-second .block ul li {
+  margin: 0;
+  padding: 0;
+}
 
-/* Links
-/-------------------------------------------------------------- */
+#sidebar-second .title {
+  color: #0A8093;
+}
+
+#sidebar-second  h3, 
+#sidebar-second  h3 strong{
+  color: #aaa;
+  font-weight: normal;
+}
+.views-row .links {
+  margin: 0;
+  padding: 0;
+}
+
+.views-row .links li {
+  background: #ddd;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  display: block;
+  float: left;
+}
+
+#block-system-main-menu li {
+  list-style: none;
+  float: left;
+  display: block;
+  padding: 5px 30px 0px 0;
+  text-decoration: none;
+}
+
+#block-system-main-menu a {
+  color: #ddd;
+  font-size: 125%;
+  text-decoration: none;
+}
 
 
-/* Quicktabs
-/-------------------------------------------------------------- */
-
+#block-system-main-menu  a:hover, #block-system-main-menu  a:active {
+    color: #fff;
+    text-decoration: none;
+}

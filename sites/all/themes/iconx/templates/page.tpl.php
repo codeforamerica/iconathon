@@ -6,35 +6,16 @@
 ?>
 <div id="container" class="container_16">
     <?php if ($page['header_top']): ?>
-    <div class="header-top grid_16">
+    <div class="header-top grid_16 alpha omega">
       <?php print render($page['header_top']); ?>
       <div class="clear"></div>
     </div>
     <?php endif; ?>
     <div id="header" class="grid_16">
-      <div class="header-logo-container grid_5 alpha">
+      <div class="header-logo-container alpha omega">
         <?php print render($page['header_logo']); ?>
         <?php print $logo; ?>
         <?php print $prealpha; ?>
-      </div>
-      <?php if($section['section_name']): ?>
-      <div class="header-subsection-container grid_6 alpha">
-        <?php print render($section['section_name']); ?>
-      </div>
-      <?php endif; ?>
-<!--
-      <div class="header-menu-container grid_2">
-        <?php print render($page['header_menu']); ?>
-      </div>
--->
-<!--
-      <div class="header-gap-container grid_4">
-        <?php print render($page['header_gap']); ?>
-      </div>
--->
-      <div class="header-signin-container grid_3 push_2 omega">
-        <?php print render($page['header_signin']); ?>
-        <?php print $account_link; ?>
       </div>
     </div>
     <?php if ($page['header_bottom']): ?>
@@ -64,22 +45,22 @@
       <?php print render($title_suffix); ?>
     </div>
     <div class="clear"></div> 
-    <div id="main-content-container" class="grid_16 alpha omega">
+    <div id="main-content-container">
       <?php if(!empty($page['sidebar_first'])): ?>
-      <div class="sidebar-first-container grid_5 omega">
+      <div class="sidebar-first-container grid_4 omega">
         <?php print render($page['sidebar_first']); ?>
       </div>
       <?php endif; ?>
       <div class="main-content-region <?php print $main_region_width; ?>">
-        <div class="tabs-container grid_11 alpha omega">
+        <div class="tabs-container">
           <?php print render($tabs); ?>
         </div>
         <div class="clear"></div>      
-        <div class="help-container grid_11 alpha omega">
+        <div class="help-container">
           <?php print render($page['help']); ?>
         </div>
         <div class="clear"></div>       
-        <div class="action-links-container grid_11 alpha omega">
+        <div class="action-links-container">
           <?php if ($action_links): ?>
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
@@ -108,13 +89,14 @@
           <?php endif; ?>
         </div>
       </div>
-      <?php if(!empty($page['sidebar_second'])): ?>
-      <div class="sidebar-second-container grid_5 omega">
-        <?php print render($page['sidebar_second']); ?>
-      </div>
-      <?php endif; ?>
     </div> 
+    <?php if(!empty($page['sidebar_second'])): ?>
+    <div class="sidebar-second-container grid_4 omega">
+      <?php print render($page['sidebar_second']); ?>
+    </div>
+    <?php endif; ?>    
     <div class="clear"></div>
+    
     <div class="postscript-container grid_16 alpha">
       <?php print render($page['postscript']); ?>
     </div>
