@@ -188,6 +188,26 @@ function iconx_preprocess_comment(&$vars) {
 /**
  * Preprocessing function for node types.
  */
-function iconx_preprocess_node_card(&$vars) {
+function iconx_preprocess_node_symbol(&$vars) {
+/*
+  $field = $vars['field_image_references'];
 
+  foreach($field as $key => $value) {
+    $image_path = $vars['field_image_references'][$key]['und']['url'];
+    
+    if(substr($image_path, 0, 21) == 'http://www.flickr.com') {
+      // is flickr
+      if(substr($image_path, -1, 3) !== 'jpg') {
+        $image_path = $image_path . 'sizes/l/in/photostream/';      
+      }
+
+    }
+    
+  }
+  
+
+
+  
+  $vars['loaded_images'] = '<img src="' . $image_path . '" />';
+*/
 }
