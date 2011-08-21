@@ -171,11 +171,20 @@ strong {
   text-decoration: none;
 }
 
+#block-menu-menu-footer-menu {
+  padding: 20px;
+}
+
+#block-menu-menu-footer-menu li a {
+  padding-right: 30px;
+}
+
 #block-menu-menu-footer-menu li a,
 #block-system-main-menu a {
   color: #ddd;
   font-size: 100%;
   text-decoration: none;
+  font-weight: normal;
 }
 
 #block-menu-menu-footer-menu a:hover, #block-menu-menu-footer-menu a:active,
@@ -194,11 +203,21 @@ strong {
   color: #666;
 }
 
-.flag-wrapper {
+.flag-wrapper .flag-action,
+.flag-wrapper .unflag-action {
   background-color: #B2E5ED;
   margin: 10px;
   display: block;
   padding: 10px;
+  font-size: 90%;
+}
+
+#main ul.pager {
+  margin-top: 10px;
+}
+
+.flag-wrapper .unflag-action {
+  background-color: #D0F1F7;
 }
 
 #main #view-id-symbols-page table a {
