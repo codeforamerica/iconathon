@@ -189,6 +189,7 @@ function iconx_preprocess_comment(&$vars) {
  * Preprocessing function for node types.
  */
 function iconx_preprocess_node_symbol(&$vars) {
+
 /*
   $field = $vars['field_image_references'];
 
@@ -204,9 +205,6 @@ function iconx_preprocess_node_symbol(&$vars) {
     }
     
   }
-  
-
-
   
   $vars['loaded_images'] = '<img src="' . $image_path . '" />';
 */

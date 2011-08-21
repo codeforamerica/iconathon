@@ -1,0 +1,4 @@
+name = Iconathon
+description = "Custom Iconathon functions"
+package = Iconathon
+core = 7.x
