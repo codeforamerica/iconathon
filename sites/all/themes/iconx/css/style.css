@@ -234,3 +234,43 @@ strong {
   font-size: 90%;
 }
 
+#main .horizontal-tabs ul.horizontal-tabs-list {
+  background: none;
+  border: none;
+}
+#main .horizontal-tabs ul {
+  border: none;
+}
+
+#main .horizontal-tabs {
+  border: none;
+}
+#main .horizontal-tabs ul li {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+#main .horizontal-tabs ul li a,
+#main .horizontal-tabs ul li a:active,
+#main .horizontal-tabs ul li a:hover,
+#main .horizontal-tabs ul.horizontal-tabs-list li a:hover {
+  background-color: none;
+  background: none;
+}
+#main .horizontal-tabs-list {
+  margin: 20px 0;
+}
+#main .horizontal-tabs ul li a:focus {
+  outline: none;
+  border: none;
+}
+
+#main .horizontal-tab-button .summary,
+#main .horizontal-tab-button #active-horizontal-tab {
+  display: none;
+}
+
+#comments {
+  margin-top: 30px;
+}
