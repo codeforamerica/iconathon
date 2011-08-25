@@ -293,8 +293,10 @@ strong {
 #sidebar-second .views-row {
   margin: 10px 0 20px 0;
 }
-
+#main .field-items .field-label {
+  width: 180px;
+}
 #main .field-items p {
   margin: 0 0 10px 0;
-  width: 80%;
+
 }
