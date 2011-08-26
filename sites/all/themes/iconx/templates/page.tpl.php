@@ -26,10 +26,10 @@
     <?php endif; ?>
   <div class="clear"></div>
   <div id="main" role="main" class="grid_16 alpha omega">
-    <div id="slogan" class="grid_8 alpha">
+    <div id="slogan" class="grid_12 alpha">
       <?php print $site_slogan; ?>
     </div>
-    <div class="preface-container grid_8 omega">
+    <div class="preface-container grid_12 omega">
       <?php print render($page['preface']); ?>
     </div>
     <div class="clear"></div>
@@ -47,7 +47,7 @@
     <div class="clear"></div> 
     <div id="main-content-container">
       <?php if(!empty($page['sidebar_first'])): ?>
-      <div class="sidebar-first-container grid_4 omega">
+      <div class="sidebar-first-container push_1 grid_5 omega">
         <?php print render($page['sidebar_first']); ?>
       </div>
       <?php endif; ?>
@@ -91,7 +91,7 @@
       </div>
     </div> 
     <?php if(!empty($page['sidebar_second'])): ?>
-    <div class="sidebar-second-container grid_4 omega">
+    <div class="sidebar-second-container push_1 grid_4 omega">
       <?php print render($page['sidebar_second']); ?>
     </div>
     <?php endif; ?>    

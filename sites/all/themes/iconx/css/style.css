@@ -3,7 +3,9 @@
 
 /* Base Settings
 -------------------------------------------------------------- */
-
+#container {
+  width: 980px;
+}
 
 body {
   background:#ddd;
@@ -32,7 +34,7 @@ dt {
 
 #container {
   background: #000000;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 #header-bottom .block {
@@ -40,7 +42,7 @@ dt {
 }
 
 .header-logo-container{
-  padding-left: 8px;
+  padding-left: 5px;
 }
 
 #slogan {
@@ -49,7 +51,7 @@ dt {
 
 #main {
   background: #ffffff;
-  padding: 0px 5px 0px 10px;
+  padding: 0px 7px 0px 10px;
 }
 
 .title-container,
