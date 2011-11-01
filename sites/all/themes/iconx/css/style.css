@@ -5,6 +5,7 @@
 -------------------------------------------------------------- */
 #container {
   width: 980px;
+  overflow-x: auto;
 }
 
 body {
@@ -136,7 +137,6 @@ a:hover, a:active {
     color: #0A8093;
     text-decoration:underline;
 }
-
 
 p {
     margin-top: 1em;
