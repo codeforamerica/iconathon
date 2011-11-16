@@ -1,4 +1,4 @@
-
+#
 Drupal 7.7, 2011-07-27
 ----------------------
 - Fixed VERSION string.
