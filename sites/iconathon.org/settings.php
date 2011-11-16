@@ -442,5 +442,8 @@ ini_set('session.cookie_lifetime', 2000000);
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+	
 
-require('/var/www/site-php/icons/iconathon_db-settings.inc');
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/icons/iconathon_db-settings.inc');
+}
